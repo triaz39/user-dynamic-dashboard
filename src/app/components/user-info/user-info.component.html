@@ -1,0 +1,8 @@
+<button (click)="backToUserList()">Back To User List</button>
+@if(userInfo) {
+  <div>
+    <img [src]="userInfo.avatar" alt="User Image" />
+    <h3>{{userInfo.first_name}} {{userInfo.last_name}}</h3>
+    <h4>{{userInfo.email}}</h4>
+  </div>
+}
